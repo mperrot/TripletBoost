@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mperrot/TripletBoost",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=['test*']),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Programming Language :: Python :: 3",
@@ -23,8 +23,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3"
     ],
     install_requires=[
-        "numpy>=1.15.4",
-        "scikit-learn==0.19.2"
+        "numpy>=1.15.4"
     ],
     python_requires="~=3.5"
 )

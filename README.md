@@ -20,5 +20,6 @@ If you use this software please cite the following publication:
 You can install TripletBoost by cloning the repository and running the setup file:
 ```
 git clone https://github.com/mperrot/TripletBoost.git
+cd TripletBoost
 python setup.py install
 ```
