@@ -1,3 +1,5 @@
+__all__ = ['Oracle','OraclePassive']
+
 import numpy as np
 
 from abc import ABCMeta,abstractmethod
@@ -19,7 +21,9 @@ class Oracle(metaclass=ABCMeta):
         from any random state.
     
     seed : int or None
-        The seed used to initialize the random number generators. (Default: None).
+        The seed used to initialize the random number generators. If
+        None the current time is used, that is
+        int(time.time()). (Default: None).
 
     Attributes
     ----------
@@ -182,8 +186,7 @@ class OraclePassive(Oracle):
         (Default: 0.0).
 
     seed : int or None
-        The seed used to initialize the random states. If None the
-        current time is used, that is int(time.time()). (Default:
+        The seed used to initialize the random states. (Default:
         None).
 
     Attributes
@@ -215,7 +218,7 @@ class OraclePassive(Oracle):
 
     seed : int
         The seed used to initialize the random states.
-    
+
     """    
     def __init__(self,x,x_test,metric,proportion_triplets=0.1,proportion_noise=0.0,seed=None):
         self.x = x

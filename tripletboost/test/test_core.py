@@ -1,6 +1,6 @@
 import unittest
 
-from ..algorithm import TripletBoost
+from ..core import TripletBoost
 
 from ..oracle import OraclePassive
 import numpy as np
