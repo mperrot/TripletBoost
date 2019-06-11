@@ -1,3 +1,5 @@
+__all__ = ['TripletBoost']
+
 import numpy as np
 import pickle,gzip,time
 
