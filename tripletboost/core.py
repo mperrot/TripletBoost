@@ -134,7 +134,8 @@ class TripletBoost:
                 
         time_end = time.process_time()
         self.time_elapsed += (time_end-time_start)
-
+        self.n_iterations += n_new_iterations
+        
         return self
         
     def predict_scores(self,n_examples_test):
