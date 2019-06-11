@@ -23,3 +23,8 @@ git clone https://github.com/mperrot/TripletBoost.git
 cd TripletBoost
 python setup.py install
 ```
+
+## Examples
+
+An example on how to use this package is provided below:
+- [Classification on the Moons dataset.](https://github.com/mperrot/TripletBoost/blob/master/examples/moons.ipynb) 
